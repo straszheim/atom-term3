@@ -137,7 +137,8 @@ module.exports =
 
     atom.packages.activatePackage('tree-view').then (treeViewPkg) =>
       node = new ListView()
-      treeViewPkg.mainModule.treeView.find(".tree-view-scroller").prepend node
+      #treeViewPkg.mainModule.treeView.find(".tree-view-scroller").prepend node
+      console.warn  "FIXME treeView.find is not a function here"
 
   service_0_1_3: () ->
     {
